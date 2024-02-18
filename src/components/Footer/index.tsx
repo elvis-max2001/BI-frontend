@@ -3,6 +3,7 @@ import { DefaultFooter } from '@ant-design/pro-components';
 import React from 'react';
 
 const Footer: React.FC = () => {
+
   return (
     <DefaultFooter
       style={{
@@ -10,20 +11,20 @@ const Footer: React.FC = () => {
       }}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
+          key: '智能 BI',
+          title: '智能 BI',
           href: 'https://pro.ant.design',
           blankTarget: true,
         },
         {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          href: 'https://github.com/elvis-max2001',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
+          key: '智能 BI',
+          title: '智能 BI',
           href: 'https://ant.design',
           blankTarget: true,
         },
