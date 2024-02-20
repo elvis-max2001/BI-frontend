@@ -14,10 +14,9 @@ import React, { useState } from 'react';
 import { flushSync } from 'react-dom';
 import Settings from '../../../../config/defaultSettings';
 import {getLoginUserUsingGet, userLoginUsingPost} from "@/services/bi/userController";
-import {refreshElements} from "rc-menu/es/hooks/useAccessibility";
 const useStyles = createStyles(({ token }) => {
   return {
-    action: {
+   /* action: {
       marginLeft: '8px',
       color: 'rgba(0, 0, 0, 0.2)',
       fontSize: '24px',
@@ -47,12 +46,12 @@ const useStyles = createStyles(({ token }) => {
       backgroundImage:
         "url('https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/V-_oS6r-i7wAAAAAAAAAAAAAFl94AQBr')",
       backgroundSize: '100% 100%',
-    },
+    },*/
   };
 });
 
 const Login: React.FC = () => {
-  const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
+  //const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
   const [type, setType] = useState<string>('account');
   const { initialState, setInitialState } = useModel('@@initialState');
   const { styles } = useStyles();
